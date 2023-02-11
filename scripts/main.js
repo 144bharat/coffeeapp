@@ -1,12 +1,12 @@
 let login = document.getElementById("login_id");
 login.addEventListener("click", () => {
 
-    window.location.href = "./login.html";
+    window.location.href = "../component/login.html";
 })
 let signup = document.getElementById("signup_id");
 signup.addEventListener("click", () => {
 
-    window.location.href = "./signup.html";
+    window.location.href = "../component/signup.html";
 })
 async function mydata() {
 
@@ -42,7 +42,9 @@ function getdata(data) {
 
         let cartimg = document.createElement("i");
         // cartimg.src = "https://cdn-icons-png.flaticon.com/512/1170/1170576.png";
-        cartimg.className = "cartimg fa-solid fa-cart-shopping";
+        cartimg.className = "fa-solid fa-cart-shopping";
+        cartimg.style.fontSize="30px";
+        cartimg.style.color="blue";
         div.append(img, title, price, button, cartimg);
 
         menu.append(div);
